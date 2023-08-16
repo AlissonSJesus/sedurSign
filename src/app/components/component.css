@@ -1,0 +1,103 @@
+#elemento {
+    position: relative;
+}
+
+#headerImage {
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#assinatura {
+    width: 600px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#elementoRow {
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 51%;
+    transform: translate(-50%);
+}
+
+#name {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    color: #005ca8;
+    font-size: 15pt;
+    font-weight: bold;
+    width: 300px;
+    height: 30px;
+}
+
+#cargo {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    font-size: 12pt;
+    font-weight: bold;
+    width: 300px;
+    height: 30px;
+}
+
+#telefone1 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 12pt;
+    width: 300px;
+    height: 30px;
+    color: #005ca8;
+}
+
+#telefone2 {
+    position: absolute;
+    top: 62%;
+    left: 35%;
+    font-size: 12pt;
+    width: 300px;
+    height: 30px;
+    color: #005ca8;
+}
+
+.form {
+    width: 25%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10pt;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+#divFooter {
+    position: fixed;
+    height: 85px;
+    bottom: 0;
+    text-align: center;
+    background-image: url('/assets/footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top: 40px;
+}

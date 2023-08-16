@@ -1,0 +1,43 @@
+<header>
+    <div class="container">
+        <img id="headerImage" src="assets/header.png" alt="">
+    </div>
+</header>
+<div id="elemento" class="container">
+    <div class="row" id="elementoRow">
+        <div id="screen">
+            <img id="assinatura" src="assets/assinaturaEmailNova.png" alt="Assinatura Editavel">
+            <span id="name">{{inputName | uppercase}}</span>
+            <span id="cargo">{{onChange(cargo.value)}}</span>
+            <span id="telefone1">{{inputTelefone1}}</span>
+            <span id="telefone2">{{inputTelefone2}}</span>
+        </div>
+    </div>
+</div>
+<div id="sign" class="container">
+</div>
+<form class="form">
+    <div class="form-group mb-3">
+        <label class="form-label">Nome:</label>
+        <input #nome class="form-control" (input)="inputName=$any($event).target.value" required>
+    </div>
+    <div class="form-group mb-3">
+        <label class="form-label">Cargo:</label>
+        <input #cargo class="form-control" (input)="inputCargo=$any($event).target.value" required>
+    </div>
+    <div class="form-group mb-3">
+        <label class="form-label">Telefone 1:</label>
+        <input class="form-control" type="number" (input)="inputTelefone1=$any($event).target.value">
+    </div>
+    <div class="form-group mb-3">
+        <label class="form-label">Telefone 2:</label>
+        <input class="form-control" type="number" (input)="inputTelefone2=$any($event).target.value">
+    </div>
+    <button class="btn btn-primary" type="button" (click)="onClick()"
+        [disabled]="!nome.value || !cargo.value">Download</button>
+</form>
+<footer>
+    <div class="container-fluid" id="divFooter">
+        <p>&copy;Sedur, 2022.</p>
+    </div>
+</footer>
